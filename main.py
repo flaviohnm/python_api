@@ -9,7 +9,7 @@ def homepage():
 
 @app.route('/vendas')
 def pegarvendas():
-  tabela = pd.read_csv('advertising.csv')
+  tabela = pd.read_csv('files/advertising.csv')
   total_vendas = tabela['Vendas'].sum()
   resposta = {'total_vendas':total_vendas}
   return jsonify(resposta)
