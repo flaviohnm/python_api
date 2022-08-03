@@ -14,4 +14,6 @@ def pegarvendas():
   resposta = {'total_vendas':total_vendas}
   return jsonify(resposta)
 
-app.run()
+  
+
+app.run(host='0.0.0.0')
