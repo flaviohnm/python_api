@@ -13,5 +13,6 @@ def pegarvendas():
   total_vendas = tabela['Vendas'].sum()
   resposta = {'total_vendas':total_vendas}
   return jsonify(resposta)
-
-app.run()
+if __name__ == "__main__":
+  
+  app.run(debug=True)
